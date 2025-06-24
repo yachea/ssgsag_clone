@@ -1,0 +1,40 @@
+.wrap {
+  height: 5000px;
+}
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.layout {
+  position: relative;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  height: 71px;
+  background-color: red;
+}
+.header_left {
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+.header_left_wrap {
+}
+.header_left_wrap img {
+}
+.header_left_wrap a {
+}
+.header_right {
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+.header_right_wrap {
+}
+.header_right_wrap a {
+}
+.header_right_wrap a img {
+}
