@@ -20,8 +20,12 @@
   position: absolute;
   top: 0;
   left: 0;
+  margin-top: 20px;
 }
 .header_left_wrap {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 .header_left_wrap img {
 }
@@ -33,8 +37,22 @@
   position: absolute;
   top: 0;
   right: 0;
+  margin-top: 20px;
 }
 .header_right_wrap {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.gonggo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.ad {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 .header_right_wrap a {
 }
