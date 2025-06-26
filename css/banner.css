@@ -1,0 +1,32 @@
+.banner {
+    padding-top: 40px;
+  position: relative;
+  width: 100%;
+}
+.banner_layout { */
+  width: 100%;
+}
+.banner_wrap {
+  width: 100%;
+}
+
+.swiper-slide {
+  width: 640px;
+  height: 320px;
+}
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+.swiper-pagination {
+}
+.banner_slide_prev {
+  width: 46px;
+  height: 46px;
+  border: 1px solid #000;
+}
+.banner_slide_next {
+  width: 46px;
+  height: 46px;
+  border: 1px solid #000;
+}
