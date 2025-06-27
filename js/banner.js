@@ -1,5 +1,6 @@
-window.addEventListener("DOMContentLoaded", () => {
-  //   가짜 데이터(Dummy 데이터 또는 Mock 데이터)
+// 4. 전체 실행
+document.addEventListener("DOMContentLoaded", () => {
+  // 1. API 데이터 (예시)
   const apiData = [
     {
       id: 1,
@@ -27,79 +28,47 @@ window.addEventListener("DOMContentLoaded", () => {
     },
   ];
 
-  //  슬라이드 갯수
-  const total = apiData.length;
-  // 슬라이드 배치 장소
-  const bannerPos = document.querySelector(".mySwiper .swiper-wrapper");
-  // 아래 코드는 별도로 작성을 한 것입니다. (보관 권장)
-  const banner = document.querySelector(".mySwiper");
+  // 2. 배너 슬라이드 DOM에 삽입
+  function renderBanners(banners) {
+    const wrapper = document.querySelector(".swiper-wrapper");
+    if (!wrapper) return;
 
-  //   html 태그 만들기
-  const tag = `
-<div class="swiper-slide">
-    <a href="#" class="banner_slide_item">
-        <img src="images/b1.png" alt="이미지" />
-    </a>
-    </div>
-`;
-  // 6개 만들기
-  let htmlTag = "";
-
-  // html 태그 만드는 기능
-  function makeHtml() {
-    for (let i = 0; i < total; i++) {
-      htmlTag =
-        htmlTag +
-        `
+    wrapper.innerHTML = banners
+      .map(
+        (banner) => `
     <div class="swiper-slide">
-    <a href="${apiData[i].link}" class="banner_slide_item">
-        <img src="${apiData[i].image}" alt="${apiData[i].alt}" />
-    </a>
+    <div class="swiper-slide_item">
+      <a href="${banner.link}">
+        <img src="${banner.image}" alt="${banner.alt}" />
+      </a>
+      </div>
     </div>
-    `;
-    }
-    // html 장소에 배치하기
-    bannerPos.innerHTML = htmlTag;
+  `
+      )
+      .join("");
   }
 
-  // 슬라이드 만들기
-  function makeSlide() {
-    const swiper = new Swiper(".sw_banner", {
+  // 3. Swiper 초기화
+  function initSwiper() {
+    return new Swiper(".mySwiper", {
       slidesPerView: 3,
-      spaceBetween: 25,
+      spaceBetween: 82,
       loop: true,
-      speed: 1000,
-      autoplay: {
-        delay: 1000,
-        disableOnInteraction: false,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
       },
       navigation: {
         nextEl: ".banner_slide_next",
         prevEl: ".banner_slide_prev",
       },
-      pagination: {
-        el: ".banner_slide_pg",
-        // 동글한거 누르면 이동
-        clickable: true,
-      },
-      breakpoints: {
-        760: {
-          slidesPerView: 2,
-          spaceBetween: 25,
-        },
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
       },
     });
-    return swiper;
   }
-  makeHtml();
-  const swiper = makeSlide(); // 순서가 뒤바뀌면 안됨.
 
-  // 배너 영역에 마우스가 걸친다면
-  banner.addEventListener("mouseenter", () => {
-    swiper.autoplay.stop();
-  });
-  // 배너 영역에 마우스가 빠져나간다면
-  banner.addEventListener("mouseleave", () => {
-    swiper.autoplay.start();
-  });
+  renderBanners(apiData);
+  initSwiper();
 });
