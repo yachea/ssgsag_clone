@@ -51,8 +51,9 @@ document.addEventListener("DOMContentLoaded", () => {
   // 3. Swiper 초기화
   function initSwiper() {
     return new Swiper(".mySwiper", {
-      slidesPerView: 1,
-      spaceBetween: 82,
+      slidesPerView: "auto",
+      centeredSlides: true,
+      spaceBetween: 20,
       loop: true,
       pagination: {
         el: ".swiper-pagination",

@@ -2,6 +2,7 @@
   padding-top: 40px;
   position: relative;
   width: 100%;
+  margin-top: 80px;
 }
 .banner_layout {
   width: 100%;
@@ -9,22 +10,30 @@
 }
 .banner_wrap {
   position: relative;
-  width: 640px;
+  width: 100%;
+  max-width: 1024px;
   margin: 0 auto;
+  overflow: visible;
+  padding: 0 24px;
 }
 
 .swiper-slide {
-  width: 100%;
+  width: 80%;
+  transition: transform 0.3s ease;
+  border-radius: 16px;
 }
 .mySwiper {
   width: 100%;
   position: relative;
   margin: 0 auto;
+  overflow: visible;
 }
 .swiper-slide_item {
-  width: 640px;
+  width: 100%;
+  max-width: 640px;
   height: 320px;
   border-radius: 16px;
+  margin: 0 auto;
   overflow: hidden;
 }
 .swiper-slide img {

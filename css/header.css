@@ -1,7 +1,11 @@
+.wrap {
+  height: 5000px;
+}
 .header {
   width: 100%;
   top: 0;
   border-bottom: 1px solid #eeeeee;
+  position: fixed;
 }
 .layout {
   position: relative;
