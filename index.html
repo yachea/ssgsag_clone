@@ -3,7 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>슥삭 | 대학생 대외활동 공모전</title>
+    <meta http-equiv="X-UA_Compatible" content="IE=edge" />
+    <title>슥삭 | 대학생 대외활동·공모전·인턴·교육 추천 공고</title>
+    <!-- 폰트 -->
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/static/pretendard.min.css
+"
+      rel="stylesheet"
+    />
+    <!-- 파비콘 -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="shortcut icon" href="assets/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="assets/site.webmanifest" />
     <!-- Link Swiper's CSS -->
     <link
       rel="stylesheet"
@@ -11,11 +34,13 @@
     />
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="css/layout.css" />
+    <!-- 파일연결 -->
+    <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/banner.css" />
     <script src="js/banner.js"></script>
     <link rel="stylesheet" href="css/catagory.css" />
+    <link rel="stylesheet" href="css/kok.css" />
   </head>
   <body>
     <div class="wrap">
@@ -49,23 +74,22 @@
       <main class="main">
         <!-- 배너 부분 -->
         <div class="banner">
-          <div class="banner_layout">
-            <div class="banner_wrap">
-              <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                  <!-- api 연동 -->
-                </div>
-              </div>
-              <button class="banner_slide_prev">
-                <img src="images/slider_arrow.svg" alt="이전" />
-              </button>
-              <button class="banner_slide_next">
-                <img src="images/slider_arrow.svg" alt="다음" />
-              </button>
-              <div class="banner_pg">
-                <div class="swiper-pagination"></div>
+          <div class="banner_wrap">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <!-- api 연동 -->
               </div>
             </div>
+
+            <button class="banner_slide_prev">
+              <img src="images/slider_arrow.svg" alt="이전" />
+            </button>
+            <button class="banner_slide_next">
+              <img src="images/slider_arrow.svg" alt="다음" />
+            </button>
+          </div>
+          <div class="banner_pg">
+            <div class="swiper-pagination"></div>
           </div>
         </div>
         <!-- 네모칸들 -->
@@ -112,9 +136,49 @@
             </div>
           </div>
         </div>
+        <!-- 슥삭이 콕 집은 공고 -->
+        <div class="kok">
+          <div class="laylout">
+            <div class="kok_title">
+              <p>슥삭이 <span class="kok_detail_k">콕</span> 집은 공고</p>
+            </div>
+            <div class="kok_detail">
+              <div class="kok_detail_box">
+                <div class="detail_img">
+                  <img src="images/box1.png" alt="환경닷컴" />
+                </div>
+                <div class="detail_cg">
+                  <div>교육/강연</div>
+                  <div>ad</div>
+                </div>
+                <div class="detail_title">
+                  <p>
+                    [한경닷컴] 실시간 데이터 처리 자바 웹 서비스 개발 과정 (채용
+                    지원)
+                  </p>
+                </div>
+                <div class="detail_day">오늘마감</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 요즘 핫한 공고만 -->
+        <div class="hotnews">
+          <div class="layout"></div>
+        </div>
+        <!-- 방금 게시된 공고 -->
+        <div class="recent">
+          <div class="layout"></div>
+        </div>
+        <!-- 슥삭 앱 -->
+        <div class="appguide">
+          <div class="layout"></div>
+        </div>
       </main>
       <!-- 하단 -->
-      <footer class="footer"></footer>
+      <footer class="footer">
+        <div class="layout"></div>
+      </footer>
     </div>
   </body>
 </html>

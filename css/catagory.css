@@ -1,6 +1,7 @@
 .category {
   position: relative;
   width: 100%;
+  padding-bottom: 120px;
 }
 .category .layout {
   width: 100%;
@@ -15,16 +16,26 @@
   padding-top: 56px;
   justify-content: center;
 }
-.category_activity {
+.category_activity,
+.category_contest,
+.category_intern,
+.category_study {
   position: relative;
-  display: flex;
+  display: block;
 }
-.category_activity a {
+.category_activity a,
+.category_contest a,
+.category_intern a,
+.category_study a {
   width: 80px;
   height: 80px;
   background-color: #f7f7f7;
   border-radius: 20px;
   padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .category_activity_hot {
   position: absolute;
@@ -39,82 +50,26 @@
   text-align: center;
   align-items: center;
 }
-.activity_img {
-  width: 48px;
-  height: 48px;
-  position: absolute;
-  margin: 0 auto;
-}
-.activity_img img {
-  width: 100%;
-  height: 100%;
-}
-.category_activity_title {
-  position: absolute;
-  text-align: center;
-}
-.category_contest {
-  position: relative;
-  display: inline;
-}
-.category_contest a {
-  width: 80px;
-  height: 80px;
-  background-color: #f7f7f7;
-  border-radius: 20px;
-  padding: 16px;
-}
-.contest_img {
-  width: 48px;
-  height: 48px;
-  margin: 0 auto;
-}
-
-.contest_img img {
-  width: 100%;
-  height: 100%;
-}
-.category_contest_title {
-}
-.category_intern {
-}
-.category_intern a {
-  position: relative;
-  width: 80px;
-  height: 80px;
-  background-color: #f7f7f7;
-  border-radius: 20px;
-}
-.intern_img {
-  width: 48px;
-  height: 48px;
-  margin: 0 auto;
-}
-
-.intern_img img {
-  width: 100%;
-  height: 100%;
-}
-.category_intern_title {
-}
-.category_study {
-}
-.category_study a {
-  position: relative;
-  width: 80px;
-  height: 80px;
-  background-color: #f7f7f7;
-  border-radius: 20px;
-}
+.activity_img,
+.contest_img,
+.intern_img,
 .study_img {
   width: 48px;
   height: 48px;
   margin: 0 auto;
 }
-
+.activity_img img,
+.contest_img img,
+.intern_img img,
 .study_img img {
   width: 100%;
   height: 100%;
 }
+.category_activity_title,
+.category_contest_title,
+.category_intern_title,
 .category_study_title {
+  position: absolute;
+  text-align: center;
+  padding-top: 120px;
 }

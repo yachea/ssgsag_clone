@@ -1,4 +1,3 @@
-// 4. 전체 실행
 document.addEventListener("DOMContentLoaded", () => {
   // 1. API 데이터 (예시)
   const apiData = [
@@ -53,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
     return new Swiper(".mySwiper", {
       slidesPerView: "auto",
       centeredSlides: true,
-      spaceBetween: 20,
+      spaceBetween: 80,
       loop: true,
       pagination: {
         el: ".swiper-pagination",

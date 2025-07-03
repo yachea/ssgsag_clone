@@ -1,0 +1,45 @@
+.kok {
+  width: 100%;
+  position: relative;
+  background-color: #f7f7ff;
+  border-top: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+  margin-top: 20px;
+}
+.laylout {
+  height: 523px;
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.kok_title {
+  height: 36px;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 64px;
+  width: 100%;
+}
+.kok_detail {
+  margin-top: 40px;
+}
+.kok_detail_k {
+  color: #5a64f9;
+}
+.kok_detail_box {
+  width: 224px;
+}
+.detail_img {
+  width: 224px;
+  height: 224px;
+  overflow: hidden;
+}
+.detail_img img {
+  width: 100%;
+  height: 100%;
+}
+.detail_cg {
+}
+.detail_title {
+}
+.detail_day {
+}

@@ -1,36 +1,30 @@
 .banner {
-  padding-top: 40px;
+  padding: 40px 0;
   position: relative;
-  width: 100%;
-  margin-top: 80px;
+  margin-top: 70px;
+  height: 400px;
 }
-.banner_layout {
-  width: 100%;
-  justify-content: center;
-}
+
 .banner_wrap {
   position: relative;
-  width: 100%;
-  max-width: 1024px;
+  width: 640px;
   margin: 0 auto;
-  overflow: visible;
-  padding: 0 24px;
+  box-sizing: border-box;
 }
 
 .swiper-slide {
-  width: 80%;
+  width: 100%;
   transition: transform 0.3s ease;
   border-radius: 16px;
 }
+
 .mySwiper {
-  width: 100%;
-  position: relative;
-  margin: 0 auto;
+  /* 의도적으로 덮어쓴거 */
   overflow: visible;
 }
 .swiper-slide_item {
-  width: 100%;
-  max-width: 640px;
+  display: block;
+  width: 640px;
   height: 320px;
   border-radius: 16px;
   margin: 0 auto;
@@ -39,14 +33,9 @@
 .swiper-slide img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
-.banner_pg {
-  margin-top: 43px;
-  justify-content: center;
-  display: flex;
-}
-.banner_pg .swiper-pagination {
-}
+
 .banner_pg .swiper-pagination span {
   width: 6px;
   height: 6px;
@@ -60,14 +49,14 @@
 }
 .banner_slide_prev {
   position: absolute;
-  top: 40%;
-  left: -20px;
+  top: 50%;
+  left: calc(50% - 320px);
+  transform: translateX(-50%) translateY(-50%) rotate(180deg);
   width: 46px;
   height: 46px;
   border: 1px solid #e5e7eb;
   z-index: 999;
   border-radius: 50%;
-  transform: rotate(180deg);
   justify-content: center;
   align-items: center;
   background-color: #fff;
@@ -75,8 +64,9 @@
 
 .banner_slide_next {
   position: absolute;
-  top: 40%;
-  right: -20px;
+  top: 50%;
+  left: calc(50% + 320px);
+  transform: translateX(-50%) translateY(-50%);
   width: 46px;
   height: 46px;
   border: 1px solid #e5e7eb;
