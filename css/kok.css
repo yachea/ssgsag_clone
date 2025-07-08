@@ -5,30 +5,39 @@
   border-top: 1px solid #e5e7eb;
   border-bottom: 1px solid #e5e7eb;
   margin-top: 20px;
-}
-.laylout {
   height: 523px;
+}
+.kok .layout {
   width: 100%;
   max-width: 1024px;
   margin: 0 auto;
+  height: 523px;
 }
+
 .kok_title {
-  height: 36px;
+  display: block;
   font-size: 24px;
   font-weight: 700;
-  margin-top: 64px;
+  margin-top: 54px;
   width: 100%;
 }
 .kok_detail {
-  margin-top: 40px;
+  padding-top: 30px;
   display: flex;
   gap: 24px;
+  padding-bottom: 50px;
 }
+
 .kok_detail_k {
   color: #5a64f9;
 }
 .kok_detail_box {
   width: 224px;
+  padding: 10px;
+}
+.kok_detail_box:hover {
+  background-color: #ebedf6;
+  border-radius: 20px;
 }
 .detail_img {
   width: 224px;
@@ -37,6 +46,7 @@
   border-radius: 10px;
   border: 1px solid #e6e6ee;
 }
+
 .detail_img img {
   justify-content: center;
   align-items: center;
@@ -65,8 +75,8 @@
   background-color: #dedee5;
   color: #fff;
   border-radius: 10px;
-  font-size: 11px;
-  padding: 1px 7px;
+  font-size: 10px;
+  padding: 1px 6px;
 }
 .detail_title {
   font-size: 15px;

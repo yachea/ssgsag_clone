@@ -42,6 +42,8 @@ https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/static/pretendard.min.css
     <link rel="stylesheet" href="css/catagory.css" />
     <link rel="stylesheet" href="css/kok.css" />
     <script src="js/kok.js"></script>
+    <link rel="stylesheet" href="css/hotnews.css" />
+    <script src="js/hotnews.js"></script>
   </head>
   <body>
     <div class="wrap">
@@ -139,33 +141,61 @@ https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/static/pretendard.min.css
         </div>
         <!-- 슥삭이 콕 집은 공고 -->
         <div class="kok">
-          <div class="laylout">
+          <div class="layout">
             <div class="kok_title">
               <p>슥삭이 <span class="kok_detail_k">콕</span> 집은 공고</p>
             </div>
             <div class="kok_detail">
-              <div class="kok_detail_box">
-                <div class="detail_img">
-                  <img src="images/box1.png" alt="환경닷컴" />
-                </div>
-                <div class="detail_cg">
-                  <div class="detail_cg_ct">교육/강연</div>
-                  <div class="detail_cg_ad">AD</div>
-                </div>
-                <div class="detail_title">
-                  <p>
-                    [한경닷컴] 실시간 데이터 처리 자바 웹 서비스 개발 과정 (채용
-                    지원)
-                  </p>
-                </div>
-                <div class="detail_day">오늘마감</div>
-              </div>
+              <!-- api 연동 -->
             </div>
           </div>
         </div>
         <!-- 요즘 핫한 공고만 -->
         <div class="hotnews">
-          <div class="layout"></div>
+          <div class="layout">
+            <div class="hotnews_title">
+              <p><span>요즘</span> 핫한 공고만 찾고 있다면?</p>
+            </div>
+            <div class="hotnews_items">
+              <ul>
+                <!-- api연동 -->
+                <li>
+                  <a href="#">
+                    <div class="hotnews_items_img">
+                      <img src="images/hotnews1.png" alt="슬기로운인턴생활" />
+                    </div>
+                    <div class="hotmews_item_p">
+                      <span>대외활동</span>
+                      <p class="item_p_title">
+                        [고용노동부] 2025 미래내일 일경험 인턴십 참여자 모집
+                      </p>
+                      <p class="item_p_day">D-177</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="hotnews_items_img">
+                      <img src="images/hotnews1.png" alt="슬기로운인턴생활" />
+                    </div>
+                    <div class="hotmews_item_p">
+                      <span>대외활동</span>
+                      <p class="item_p_title">
+                        [고용노동부] 2025 미래내일 일경험 인턴십 참여자 모집
+                      </p>
+                      <p class="item_p_day">D-177</p>
+                    </div>
+                  </a>
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+          </div>
         </div>
         <!-- 방금 게시된 공고 -->
         <div class="recent">
