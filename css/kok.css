@@ -12,6 +12,8 @@
   max-width: 1024px;
   margin: 0 auto;
   height: 523px;
+  display: flex;
+  flex-direction: column;
 }
 
 .kok_title {
@@ -20,11 +22,13 @@
   font-weight: 700;
   margin-top: 54px;
   width: 100%;
+  flex-wrap: wrap;
+  padding-left: 8px;
 }
 .kok_detail {
   padding-top: 30px;
   display: flex;
-  gap: 24px;
+  gap: 10px;
   padding-bottom: 50px;
 }
 
@@ -32,8 +36,8 @@
   color: #5a64f9;
 }
 .kok_detail_box {
-  width: 224px;
-  padding: 10px;
+  width: 244px;
+  padding: 8px;
 }
 .kok_detail_box:hover {
   background-color: #ebedf6;
@@ -80,7 +84,7 @@
 }
 .detail_title {
   font-size: 15px;
-  margin-top: 7px;
+  padding-top: 3px;
 }
 .detail_day {
   color: #1c1c1c;

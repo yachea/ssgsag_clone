@@ -3,7 +3,8 @@
   width: 100%;
   position: relative;
   background-color: #fff;
-  padding-top: 65px;
+  padding-top: 55px;
+  border-bottom: 1px solid #e5e7eb;
 }
 .hotnews .layout {
   width: 100%;
@@ -25,10 +26,12 @@
 }
 
 .hotnews_items {
-  padding-top: 16px;
+  padding-top: 5px;
   width: 100%;
 }
 .hotnews_items ul {
+  display: flex;
+  flex-wrap: wrap;
 }
 .hotnews_items ul li {
   padding-top: 24px;
@@ -37,15 +40,24 @@
   display: flex;
   width: 488px;
   height: 120px;
+  padding: 8px;
+  padding-right: 42px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
 }
 .hotnews_items ul li a:hover {
   transition: 0.5s;
   background-color: #ebedf6;
+  border-radius: 20px;
 }
 .hotnews_items_img {
   width: 102px;
   height: 102px;
   overflow: hidden;
+  border-radius: 10px;
+  /* 이미지 변하지 않게 고정 */
+  flex-shrink: 0;
 }
 .hotnews_items_img img {
   width: 100%;
@@ -55,10 +67,29 @@
 
 .hotmews_item_p {
   padding-left: 12px;
+  height: 46px;
 }
 .hotmews_item_p span {
+  font-size: 11px;
+  background-color: #eff3fe;
+  text-align: center;
+  color: #346df3;
+  padding: 2px 5px;
 }
 .item_p_title {
+  font-size: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-clamp: 2; /* 2줄까지만 표시 */
+  -webkit-box-orient: vertical;
+  white-space: normal;
 }
 .item_p_day {
+  color: #1c1c1c;
+  font-weight: 600;
+  font-size: 17px;
+  margin-top: 10px;
+  position: absolute;
+  bottom: 10px;
 }
